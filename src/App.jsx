@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "./components/Header"
 import Location from "./components/Location"
-import Story from "./components/Story"
 import data from "./data"
 
 export default function App() {
