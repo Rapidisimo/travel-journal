@@ -10,10 +10,13 @@ export default function Background(props) {
                 </h2>
                 </section>
                 <section className="country">
-                    <h4>M {props.location} <a href={props.gmaps} className="map" target="_blank">View on Google Maps</a></h4>
+                    <h4><span className="fa-solid fa-location-dot"></span> {props.location}</h4>
                 </section>
-                <section className="story white-bkg">
-                    <p>
+                <section className="google-link">
+                    <a href={props.gmaps} className="map-link" target="_blank">View on Google Maps</a>
+                </section>
+                <section className="story">
+                    <p className="white-bkg">
                         {props.article}
                     </p>
                 </section>
