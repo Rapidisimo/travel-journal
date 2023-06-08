@@ -3,6 +3,7 @@
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    background-color: hsla(0, 2%, 92%, 0.651);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +30,10 @@ li {
 
 /* Layout */
 
+#root {
+    margin: 0 .4rem;
+}
+
 header {
     background-color: #F55A5A;
 }
@@ -51,12 +56,14 @@ header nav ul {
 .trip-photo {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 96.5dvw;
     height: 70dvh;
+    margin: 1.5rem 0;
+    border-radius: 5px;
 }
 
 .location-name {
-    margin: 0 .4rem;
+    margin: 0 .2rem;
     color: white;
     font-size: 4rem;
     line-height: 1.1;
@@ -66,4 +73,36 @@ header nav ul {
 
 .country {
     margin: 0 .4rem;
+}
+
+.story {
+    padding: 1rem;
+    color: white;
+}
+
+.white-bkg {
+    background-color: hsla(0, 0%, 80%, .45);
+    backdrop-filter: blur(10px);
+    margin: .4rem;
+    border-radius: .4rem;
+}
+
+.dates ul {
+    display: flex;
+    justify-content: center;
+    margin: -2.6rem .2rem 0 34%;
+    /* margin-top: -2.6rem; */
+    /* margin-left: 46%; */
+    background-color: hsla(0, 0%, 100%, .85);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 80%, 0.374);
+    padding: .4rem 0;
+}
+.dates ul li {
+    margin: 0 .2rem;
+    font-size: .95rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(65, 65, 65);
 }
