@@ -7,7 +7,7 @@
 Feel comfortable with using React props, designing a project with re-usability in mind and modify the design a bit.
 
 ## Requirements
-1. ✅ Data array in seperate .js file
+1. ✅ Data array in separate .js file
     1.1 ✅ Title, location, Google Maps link, start date, end date, description, image URL
 2. ✅ Use .map() and props to create each entry in the travel journal
 3. ✅ ⭐️Styled & Polished⭐️
