@@ -17,7 +17,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: 'Urbanist', sans-serif; */
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     line-height: 1.1;
@@ -44,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+header a {
+    color: white;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -54,20 +57,18 @@ li {
     margin: 0 .6rem;
 }
 
-/* Layout */
-
+/* index.html */
 .wrapper {
     margin: 0 .4rem;
     max-width: 1024px;
     min-width: 350px;
 }
 
+/* Component Adjustments */
+
+/* Header.jsx */
 header {
     background-color: #F55A5A;
-}
-
-header a {
-    color: white;
 }
 
 header nav {
@@ -85,6 +86,7 @@ header nav ul {
     align-items: center;
 }
 
+/* Location.jsx */
 .trip-photo {
     background-repeat: no-repeat;
     background-size: cover;
