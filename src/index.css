@@ -118,6 +118,7 @@ header nav ul {
     grid-row: 3 / 4;
     text-align: right;
     margin-right: 1rem;
+    padding-top: .5rem;
 }
 
 .map-link {
@@ -197,6 +198,7 @@ header nav ul {
     .google-link {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
+        padding-top: .5rem;
     }
     
     .story {
@@ -235,8 +237,9 @@ header nav ul {
     }
     
     .google-link {
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
         grid-column: 2 / 3;
+        padding-top: .6rem;
     }
 
 
