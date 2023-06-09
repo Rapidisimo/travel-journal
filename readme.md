@@ -1,6 +1,6 @@
 # Scrimba Solo Project - Travel Journal
 
-### [Liver Version](https://rapidisimo.github.io/travel-journal/)
+### [Live Version](https://rapidisimo.github.io/travel-journal/)
 [GitHub Repository](https://github.com/Rapidisimo/digital-business-card)
 
 ## My Objectives
