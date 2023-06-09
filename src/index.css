@@ -54,9 +54,6 @@ li {
     margin: 0 .6rem;
 }
 
-
-
-
 /* Layout */
 
 .wrapper {
@@ -167,6 +164,7 @@ header nav ul {
     color: rgb(65, 65, 65);
 }
 
+
 @media (min-width: 700px) {
 
     .wrapper {
@@ -249,6 +247,11 @@ header nav ul {
         margin-right: 72%;
         margin-left: 2rem;
     }
+}
 
-
+@media (orientation: landscape) {
+    .trip-photo {
+        grid-template-columns: 65% 1fr;
+    }
+    
 }
