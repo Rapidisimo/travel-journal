@@ -135,7 +135,7 @@ header nav ul {
 
 .map-link {
     color: white;
-    text-shadow: 1px 1px 0 hsla(0, 0%, 16%, 0.247);
+    text-shadow: 2px 2px 1px hsla(0, 0%, 16%, 0.247);
     text-decoration: underline 1px solid hsla(0, 89%, 66%, 0.9);
 }
 
