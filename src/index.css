@@ -63,12 +63,12 @@ ul {
 
 li {
     list-style: none;
-    margin: 0 .6rem;
+    margin: 0 .6em;
 }
 
 /* index.html */
 .wrapper {
-    margin: 0 .4rem;
+    margin: 0 .4em;
     max-width: 1024px;
     min-width: 350px;
 }
@@ -79,17 +79,14 @@ li {
 header {
     background-color: #F55A5A;
     top: 0;
-    padding-bottom: .2rem;
     border-radius: 0 0 5px 5px;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
-    padding: .4rem .4rem .4rem 1.02rem;
+    align-items: center;
+    padding: .4em .4em .4em 1.02em;
 }
 
-header nav h1 {
+header h1 {
     font-size: var(--size-step-3);
 }
 
@@ -99,27 +96,28 @@ header nav ul {
 }
 
 /* Location.jsx */
-.trip-photo {
+.trip {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 96.5%;
     height: 70dvh;
-    margin: 1.5rem auto;
+    min-height: 467px;
+    margin: 1.5em auto;
     border-radius: 5px;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
 }
 
 .location-name {
-    padding: .6rem 1rem;
+    padding: .6em 1em;
     color: white;
     text-shadow: 1px 1px 0 hsl(0, 0%, 20%);
 }
 
 .country {
     grid-row: 2 / 3;
-    margin-right: 1rem;
+    margin-right: 1em;
     align-self: end;
     text-align: right;
     color: hsla(0, 89%, 66%, 0.9);
@@ -129,8 +127,8 @@ header nav ul {
 .google-link {
     grid-row: 3 / 4;
     text-align: right;
-    margin-right: 1rem;
-    padding-top: .5rem;
+    margin-right: 1em;
+    padding-top: .5em;
 }
 
 .map-link {
@@ -140,8 +138,8 @@ header nav ul {
 }
 
 .story {
-    padding: .2rem 1rem;
-    margin-bottom: 1.4rem;
+    padding: .2em 1em;
+    margin-bottom: 1.4em;
     color: black;
     grid-row: 4 / 5;
 }
@@ -153,32 +151,25 @@ header nav ul {
 .white-bkg {
     background-color: hsla(0, 0%, 80%, .45);
     backdrop-filter: blur(10px);
-    margin-left: .4rem;
-    padding: .4rem .6rem;
-    border-radius: .4rem;
+    margin-left: .4em;
+    padding: .4rem .6em;
+    border-radius: .4em;
 }
 
 .dates {
     margin: 0 15%;
 }
 
-.dates ul {
+.dates p {
     display: flex;
     justify-content: center;
-    margin-top: -2.5rem;
+    margin-top: -2.5em;
     background-color: hsla(0, 0%, 100%, .85);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid hsla(0, 0%, 80%, 0.374);
-    padding: .25rem .2rem;
+    padding: .25em .2em;
 }
-.dates ul li {
-    margin: 0 .2rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: rgb(65, 65, 65);
-}
-
 
 @media (min-width: 700px) {
 
@@ -187,8 +178,9 @@ header nav ul {
         margin-right: auto;
     }
 
-    .trip-photo {
+    .trip {
         height: 38dvh;
+        min-height: 270px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -210,7 +202,7 @@ header nav ul {
     .google-link {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
-        padding-top: .5rem;
+        padding-top: .5em;
     }
     
     .story {
@@ -221,7 +213,7 @@ header nav ul {
 
     .dates {
         margin-right: 62%;
-        margin-left: 2.2rem;
+        margin-left: 2.2em;
     }
     
 }
@@ -232,7 +224,7 @@ header nav ul {
         grid-column: 1 / 2;
         grid-row: 4 / 5;
         align-self: end;
-        margin-bottom: .8rem;
+        margin-bottom: .8em;
     }
 
     .location-name {
@@ -240,7 +232,7 @@ header nav ul {
     }
 
     .country {
-        padding-top: .4rem;
+        padding-top: .4em;
         grid-row: 1 / 2;
         grid-column: 2 / 3;
     }
@@ -248,7 +240,7 @@ header nav ul {
     .google-link {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
-        padding-top: .3rem;
+        padding-top: .3em;
     }
 
 
@@ -259,12 +251,12 @@ header nav ul {
 
     .dates {
         margin-right: 72%;
-        margin-left: 2rem;
+        margin-left: 2em;
     }
 }
 
 @media (orientation: landscape) {
-    .trip-photo {
+    .trip {
         grid-template-columns: 65% 1fr;
     }
     

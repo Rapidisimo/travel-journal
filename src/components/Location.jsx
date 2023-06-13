@@ -1,33 +1,29 @@
 import React from "react"
 
-export default function Background(props) {
+export default function Location(props) {
     return (
         <>
-            <section className="trip-photo" style={{ backgroundImage: `url(${props.img})` }}>
+            <section className="trip" style={{ backgroundImage: `url(${props.imageUrl})` }}>
                 <section className="location-title">
                 <h2 className="location-name">
                     {props.title}
                 </h2>
                 </section>
-                <section className="country">
+                <div className="country">
                     <h4><span className="fa-solid fa-location-dot"></span> {props.location}</h4>
-                </section>
-                <section className="google-link">
+                </div>
+                <div className="google-link">
                     <a href={props.gmaps} className="map-link" target="_blank">View on Google Maps</a>
-                </section>
+                </div>
                 <section className="story">
                     <p className="white-bkg">
-                        {props.article}
+                        {props.description}
                     </p>
                 </section>
             </section>
-            <section className="dates">
-                <ul>
-                    <li>{props.start}</li>
-                    <li>-</li>
-                    <li>{props.end}</li>
-                </ul>
-            </section>
+            <div className="dates">
+                <p>{props.startDate} - {props.endDate}</p>
+            </div>
         </>
     )
 };
