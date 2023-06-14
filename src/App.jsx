@@ -7,6 +7,7 @@ export default function App() {
   const trips = data.map( details => {
     return(
       <Location
+        key={details.id}
         {...details}
       />
     )
